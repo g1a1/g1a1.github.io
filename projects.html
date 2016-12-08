@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/img/g.png"> <!-- tab icon -->
+    <link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>
+
+    <title>Projects</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Custom style for this page -->
+    <style>
+    a {	color: inherit; /*color*/text-decoration: inherit; /*underline */}
+	a:hover { color:inherit;text-decoration: inherit; }
+	</style>
+
+  </head>
+
+  <body>
+      <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Home</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="projects.html">Projects</a></li>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+	<section id="pageTitle">
+		<h1 style=" color:#2f2f2f;">Some of my Projects</h1><br>
+	<div class="container">
+		<div class="row centered mt mb">
+			<div class="col-lg-8 col-lg-offset-2">
+
+				<script src="assets/js/wow/wow.js"></script>
+				<script>
+    				wow = new WOW(
+    				  {
+    				    animateClass: 'animated',
+    				    offset:       100,
+    				    callback:     function(box) {
+    				      console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+    				    }
+    				  }
+    				);
+    				wow.init();
+ 				</script>
+
+				<br><br>
+				<h4>Game (Unreal Engine)</h4>
+				<p style="text-align: left;";>Designed and prototyped ideas for a basic UDK game. After finalizing the design, we started work on various components of the game. The primary areas of focus included map design, player camera, user controls, weapons, and enemy AI. As you can see from the screenshot, we had as much fun playing our game as making it.</p>
+				<br>
+				<img class="wow fadeIn" data-wow-duration="2000ms" data-wow-delay=".3s" src="assets\img\proj\1.jpg" alt="Game Screenshot" >
+
+				<hr style="height:1em; visibility:hidden;" /><br>
+				<h4>Java Client Server</h4>
+				<p style="text-align: left;";>Used <a href="https://en.wikipedia.org/wiki/Java_remote_method_invocation">RMI</a> and <a href="http://www.oracle.com/technetwork/java/javase/jdbc/index.html">JDBC</a> to access information from a <a href="https://en.wikipedia.org/wiki/MySQL">MySQL</a> database. The RMI Server sends the requested data to the RMI Client. After receiving the data, it is processed to be displayed in chart form using the <a href="http://www.jfree.org/jfreechart/">JFreeChart</a> library.</p>
+				<br>
+				<img class="wow fadeIn" data-wow-duration="2000ms" src="assets\img\proj\2.jpg" alt="Client and Server" >
+
+				<hr style="height:1em; visibility:hidden;"/><br>
+				<h4><a href="http://www.w3schools.com/website/web_tcpip.asp">TCP/IP</a> Connection</h4>
+				<p style="text-align: left;";>Worked as a team to implement TCP/IP data communications between a server application and a client Arduino controlled Robot.  The client received commands through network packets and successfully executed given instructions. These commands included status reports, directions/ duration for the robot to move, sleep, and closing the connection.</p>
+				<br>
+				<img style="max-width: 70%;" class="wow fadeIn" data-wow-duration="2000ms" src="assets\img\proj\3.jpg" alt="Arduino" >
+
+          <!-- Delete after cpp check v-->
+          <div style="margin-top: 190px;">
+          <h2><a href="experience.html" ;>Link to Technical Experience</a></h2>
+          <br><br>
+          <h1 style=" color:#2f2f2f;">Resume</h1><br><br>
+         <iframe src="assets/resume.pdf" style="width:95%; height:700px;" frameborder="0"></iframe>
+         </div>
+         <br>
+         <br>
+         <h3 style="text-align:left;"> Skills:</h3><br>
+         <div style="text-align:left;">
+Three skill areas that are important to me include communication, decision making, and confidence. During the daily work of all professionals, communication is key. Effectively understanding others and being clear to our listeners is of paramount importance. All forms of work deal with communication. I have improved my skills in this area through my work experience, giving presentations, as well as in my school life. Decision making is another skill that I further developed during my co-op work experience. Choosing the right decision based on the situation, and goal will lead to a better outcome. I think it is important to work hard, but more importantly to work smart. The last skill that I strongly value is confidence. It gives you the ability to apply your full potential toward a task. I have improved and benefitted from confidence because it helps motivate me toward my goals.</div> 
+          <!-- Delete after cpp check ^-->
+
+			</div>
+		</div><!--/row -->
+	</div><!--/container -->
+	</section>
+ 
+  
+
+  <footer>
+    <div class="col-lg-4">
+      <p><b>SOFTWARE DEVELOPER</b></p>
+    </div>
+    <div class="col-lg-4">
+      <p><img  style="height:2em;" src="assets\img\glen.png"></p>
+    </div>
+    <div class="col-lg-4" ><p style="font-weight: 700; color: #4a4a4a;"> Copyright ©
+      <script language="javascript" type="text/javascript">
+        var d = new Date()
+        document.write(d.getFullYear())
+       </script>
+      Glen Alexander</p>
+    </div>          
+   </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
