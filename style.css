@@ -1,0 +1,323 @@
+/* ==========================================================================
+   Base Styles, Bootstrap Modifications & Fonts Import
+   ========================================================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #f2f2f2;
+    color: #2f2f2f;
+    text-shadow: none;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    overflow-y:scroll; /* scrool bar always visible */
+    min-width: 240px;  /* min width for all pages */
+}
+
+footer {
+    background-color: #2f2f2f;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+footer p {
+	text-align:center;
+	margin-top: 40px;
+	color: #f2f2f2;
+	margin-left: 10px;
+	font-size: 1em;
+}	
+
+/*media query for footer less than 1198 width*/
+@media  (max-width: 1198px) {
+	footer{
+		height: 230px;
+	}
+	body{
+		margin: 0 0 230px; /* bottom = footer height */
+	}
+	#welcomeWrap{margin-bottom: 200px;}
+	#pageTitle{margin-bottom: 200px;}
+	#gallerySpace{margin-bottom: 200px;}
+	.cpt{margin-bottom: 200px;}
+}
+ 
+
+body {
+	margin: 0 0 100px; /* bottom = footer height */
+     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+    color: #4a4a4a;
+}
+
+.smoke a:hover{
+	text-shadow: 5px 2px 5px black;
+}
+
+div.animated {
+ animation-duration: 9s;
+}
+
+img {
+max-width: 85%;
+height: auto;
+width: auto;
+}
+
+.navbar-nav > li > a, .navbar-brand {  /* navbar height*/
+    padding-top: 13px !important; 
+    padding-bottom: 13 !important;
+    height: 45px;
+}
+.navbar {min-height:35px !important;}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #c85995;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #c85995;
+  background-color: transparent;
+}
+
+.navbar-brand {
+	font-weight: 100;
+}
+
+.navbar-default .navbar-brand {
+	color: #f2f2f2;
+}
+
+.navbar-default {
+	background-color: #2f2f2f; /* navbar base*/
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #c85995 ; /* selection text*/
+	background-color: transparent; /* selection background */
+}
+
+
+.navbar-default .navbar-nav > li > a {
+	color: #f2f2f2; /* default text colour*/
+}
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+	padding-top: 55px;
+   
+	background: url(../img/Bsnow.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+/*media queries for header text resize*/
+@media  (max-width: 269px) {
+    #headerwrap h1{
+        font-size: 28px;
+    }
+}
+
+@media  (min-width: 270px) {
+    #headerwrap h1{
+        font-size: 40px;
+    }
+}
+ 
+@media  (min-width: 420px) {
+    #headerwrap h1{
+        font-size: 60px;
+    }
+}
+
+@media  (min-width: 520px) {
+    #headerwrap h1{
+        font-size: 80px;
+    }
+}
+
+/*pageTitle is for projects and thanks*/  
+@media  (max-width: 369px) { /*thanks has inline style at this width, redundancy for projects*/
+                  #pageTitle h1{
+                      font-size: 24px;
+                  }
+              }
+
+@media  (min-width: 370px) {
+    #pageTitle h1{
+        font-size: 24px;
+    }
+}
+
+@media  (min-width: 600px) {
+    #pageTitle h1{
+        font-size: 36px;
+    }
+}
+
+@media  (min-width: 980px) {
+    #pageTitle h1{
+        font-size: 60px;
+    }
+}
+
+
+#headerwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+
+#pageTitle {	
+	margin-top: -70px;
+	padding-top: 185px;
+	padding-bottom: 100px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#pageTitle h4 {
+	text-align: left;
+}
+  
+
+#welcomeWrap {	
+	margin-top: -10px;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 75px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* Gallery */
+#gallerySpace{
+  padding-top: 125px;
+  padding-bottom: 55px;
+  padding-right: 7%;
+  padding-left:  7%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Contact */
+.cpt{
+	margin-top: 125px;
+	padding-bottom: 100px;
+ 	text-align: center;
+}
+
+.btn-success {
+	background-color: white;
+	color: #c85995;
+	border: 1px solid #cccccc;
+	border-radius: 2px;
+	 
+} 
+
+.btn-success:hover { 
+	background-color: #c85995;
+	border: 1px solid #c85995;
+}
+
+textarea, input, input[type], .uneditable-input {   
+    
+    box-shadow: 0 0px 0px;
+    outline: 0 none;
+    border-radius: 2px;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+    border-color: #c85995;
+    box-shadow: 0 0px 0px rgba(229, 103, 23, 0.075) inset, 0 0 0px rgba(229, 103, 23, 0.6);
+}
+
+.form-control{ /*message*/
+	border-radius: 2px;
+} 
+
+.form-control:focus{
+	border-color: #c85995;  
+	box-shadow: none; 
+	-webkit-box-shadow: none;
+} 
+
+
+

@@ -22,10 +22,9 @@ Y888   | 888 Y888    , 888  888        /____Y88b  888 Y888    ,   /Y88b  C888  8
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Dynalight' rel='stylesheet' type='text/css'>
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
-    
+    <script src="assets/js/wow/wow.js"></script>
     <style>
     .wow:first-child {
       visibility: hidden;
@@ -71,7 +70,6 @@ Y888   | 888 Y888    , 888  888        /____Y88b  888 Y888    ,   /Y88b  C888  8
 	    </div> <!-- /container -->
 	</div><!--/headerwrap -->    
 
-	<script src="assets/js/wow/wow.js"></script>
 	<script>
     	wow = new WOW(
     	  {
@@ -90,12 +88,59 @@ Y888   | 888 Y888    , 888  888        /____Y88b  888 Y888    ,   /Y88b  C888  8
 		<div class="row centered mt mb">
 			<div class="col-lg-8 col-lg-offset-2">
 				<h4>Welcome to my website</h4>
-				<p>I’m a software developer with experience in various programming languages, development environments and database solutions. This website was designed by me to help showcase some of my work. Hope you enjoy your visit and have a great day!</p>
+				<p>I've created this page to help showcase some of my work both professionally and otherwise. This website was created by me using JavaScript, bootstrap and basic HTML. Hope you enjoy your visit and have a great day!</p>
+        <br>
+
+
+
+
+
+<div style="margin-top: 5%">
+<p>Here is a quote for today:</p>
+
+<!-- Quote Script-->
+<p id="quote" class="wow animate fadeIn" data-wow-duration="10101ms" data-wow-delay="5.2s"></p>
+<script>
+  var message;
+  var d = new Date();
+  var specific_day = d.getDay();
+
+  if (specific_day == 1) {
+    message = "Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway";
+  } else if (specific_day == 2) {
+    message = "Knowing is not enough; we must apply. Wishing is not enough; we must do";
+  } else if (specific_day == 3) {
+    message = "There's no better night's sleep than after an honest day's work";
+  } else if (specific_day == 4) {
+    message = "Motivation is the fire, so fan the flames with discipline";
+  } else if (specific_day == 5) {
+    message = "A smooth sea never made a skilled sailor";
+  } else if (specific_day == 6) {
+    message = "The decisions you make and the actions that follow are a reflection of who you really are";
+  } else if (specific_day == 7) {
+    message = "The meaning of life is what you make of it";
+  } else {
+    message = "You are never too old to set another goal or to dream a new dream";
+  }
+  message = "&quot;"+message+"&quot;" //add quotation marks
+  document.getElementById("quote").innerHTML = message;
+</script> 
+</div>
+ 
+
+
+
+
+
+
 			</div>
 			</div><!--/row -->
 	</div><!--/container -->
 	</section>
   
+
+
+
   <footer>
     <div class="col-lg-4">
       <p><b>SOFTWARE DEVELOPER</b></p>
