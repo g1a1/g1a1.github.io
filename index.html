@@ -105,8 +105,10 @@ Y888   | 888 Y888    , 888  888        /____Y88b  888 Y888    ,   /Y88b  C888  8
   var d = new Date();
   var specific_day = d.getDay();
 
-  if (specific_day == 1) {
-    message = "Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway";
+  if (specific_day == 0) {
+    message = "The meaning of life is what you make of it";
+  } else if (specific_day == 1) {
+    message = "Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway";	    
   } else if (specific_day == 2) {
     message = "Knowing is not enough; we must apply. Wishing is not enough; we must do";
   } else if (specific_day == 3) {
@@ -117,8 +119,6 @@ Y888   | 888 Y888    , 888  888        /____Y88b  888 Y888    ,   /Y88b  C888  8
     message = "A smooth sea never made a skilled sailor";
   } else if (specific_day == 6) {
     message = "The decisions you make and the actions that follow are a reflection of who you really are";
-  } else if (specific_day == 7) {
-    message = "The meaning of life is what you make of it";
   } else {
     message = "You are never too old to set another goal or to dream a new dream";
   }
