@@ -277,6 +277,10 @@ width: auto;
   margin-left: auto;
 }
 
+.thumbnail{
+  display: inline-flex; 
+}
+
 /* Contact */
 .cpt{
 	margin-top: 125px;
